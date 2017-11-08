@@ -1,37 +1,42 @@
 {
-  "name": "codeweb",
-  "version": "1.0.0",
-  "description": "",
-  "main": "gulpfile.js",
-  "dependencies": {
-    "array-differ": "^2.0.3",
-    "browser-sync": "^2.18.8",
-    "eslint": "^3.19.0",
-    "eslint-config-standard": "^10.2.1",
-    "eslint-plugin-promise": "^3.5.0",
-    "eslint-plugin-standard": "^3.0.1",
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^4.0.0",
-    "gulp-babel": "^6.1.2",
-    "gulp-clean-css": "^3.2.0",
-    "gulp-clean-dest": "^0.2.0",
-    "gulp-concat": "^2.6.1",
-    "gulp-copy": "^1.0.0",
-    "gulp-csscomb": "^3.0.8",
-    "gulp-csso": "^3.0.0",
-    "gulp-email-remove-unused-css": "^1.2.0",
-    "gulp-eslint": "^3.0.1",
-    "gulp-sass": "^3.1.0",
-    "gulp-sourcemaps": "^2.5.1",
-    "gulp-uglify": "^2.1.2",
-    "gulp-uncss": "^1.0.6",
-    "gulp-selectors": "^0.1.9",
-    "pump": "^1.0.2"
-  },
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Ronald Torrez",
-  "license": "UNLICENSED"
+	"name" : "dbs-web",
+	"version" : "1.0.0",
+	"description" : "",
+	"main" : "gulpfile.js",
+	"dependencies" : {
+		"array-differ" : "^2.0.3",
+		"browser-sync" : "^2.18.8",
+		"eslint" : "^3.19.0",
+		"eslint-config-standard" : "^10.2.1",
+		"eslint-plugin-promise" : "^3.5.0",
+		"eslint-plugin-standard" : "^3.0.1",
+		"gulp" : "^3.9.1",
+		"gulp-autoprefixer" : "^4.0.0",
+		"gulp-babel" : "^6.1.2",
+		"gulp-clean-css" : "^3.2.0",
+		"gulp-clean-dest" : "^0.2.0",
+		"gulp-concat" : "^2.6.1",
+		"gulp-copy" : "^1.0.0",
+		"gulp-csscomb" : "^3.0.8",
+		"gulp-csso" : "^3.0.0",
+		"gulp-email-remove-unused-css" : "^1.2.0",
+		"gulp-eslint" : "^3.0.1",
+		"gulp-rename" : "^1.2.2",
+		"gulp-sass" : "^3.1.0",
+		"gulp-selectors" : "^0.1.9",
+		"gulp-sourcemaps" : "^2.5.1",
+		"gulp-uglify" : "^2.1.2",
+		"gulp-uncss" : "^1.0.6",
+		"jquery" : "^3.2.1",
+		"pump" : "^1.0.2"
+	},
+	"devDependencies" : {
+		"babel-preset-es2015" : "^6.24.1",
+		"gulp-babel" : "^6.1.2"
+	},
+	"scripts" : {
+		"test" : "echo \"Error: no test specified\" && exit 1"
+	},
+	"author" : "Ronald Torrez",
+	"license" : "UNLICENSED"
 }
