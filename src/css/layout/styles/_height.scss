@@ -1,0 +1,10 @@
+.h {
+	&-full {
+		display: flex;
+		height: 100%;
+	}
+	&-null {
+		display: flex;
+		height: auto;
+	}
+}

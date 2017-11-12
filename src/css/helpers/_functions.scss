@@ -1,0 +1,15 @@
+@function fn-gen-grid_tem($num,$value) {
+	$return: '';
+	@if ($value == 'num') {
+		$return: '';
+		@for $i from 1 through $num {
+			$return: '#{$return} 1fr';
+		}
+	} @else if ($value == 'auto') {
+		$return: '';
+		@for $i from 1 through $num {
+			$return: '#{$return} auto';
+		}
+	}
+	@return unquote($return);
+}

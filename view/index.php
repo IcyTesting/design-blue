@@ -1,12 +1,30 @@
 <!doctype html>
 <html lang="es">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Document</title>
+	<?php
+		require_once 'file/_head.php';
+	?>
 </head>
 <body>
-<p>Acceso denegado para esta ruta</p>
+<header class="col-cont-2-fix row-cont-1 pad-sec pad-sec-top pad-sec-bottom">
+	<?php
+		require_once 'file/_header.php';
+	?>
+</header>
+<nav class="nav-main">
+	<?php
+		require_once 'file/_nav.php';
+	?>
+</nav>
+<div class="from-page" id="img">
+	<figure>
+		<img src="http://localhost:3000/img/header-main.png" alt="DBS-Business">
+	</figure>
+</div>
+<main>
+	<?php
+		require_once 'file/_section.php';
+	?>
+</main>
 </body>
 </html>

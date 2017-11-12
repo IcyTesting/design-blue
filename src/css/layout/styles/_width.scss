@@ -1,0 +1,10 @@
+.w {
+	&-full {
+		display: flex;
+		width: 100%;
+	}
+	&-null {
+		display: flex;
+		width: auto;
+	}
+}

@@ -3,7 +3,7 @@ let browserSync = require( 'browser-sync' ).create();
 let pump = require( 'pump' );
 
 let cleanDest = require( 'gulp-clean-dest' );
-//let uglify = require( 'gulp-uglify' );
+let uglify = require( 'gulp-uglify' );
 let babel = require( 'gulp-babel' );
 
 let sass = require( 'gulp-sass' );
@@ -31,7 +31,7 @@ gulp.task( 'serve', () => {
 		notify: true
 	} );
 	
-	gulp.watch( [ './src/**/*.scss' ], [ 'sass' ] );
+	gulp.watch( [ './**/*.scss' ], [ 'sass' ] );
 	gulp.watch( [ './**/*.php' ], [ 'reload' ] );
 	gulp.watch( [ './src/**/*.js' ], [ 'mini_js' ] );
 	//gulp.watch( [ './**/*.json' ], [ 'reload' ] );
@@ -41,12 +41,12 @@ gulp.task( 'sass', () => {
 	pump( [
 		gulp.src( [ './src/**/*.scss' ] ),
 		cleanDest( './src/**/*.css' ),
-		sass(),
+		sass().on( 'error', sass.logError ),
+		csso(),
 		autoprefixer( {
 			browsers: [ 'last 5 versions' ],
 			cascade: false
 		} ),
-		csso(),
 		clean_css( {
 			compatibility: 'ie7',
 			format: 'beautify',
@@ -77,11 +77,11 @@ gulp.task( 'sass', () => {
 
 gulp.task( 'mini_js', () => {
 	pump( [
-		gulp.src( [ './src/**/*.js' ] ),
+		gulp.src( [ './src/js/app.js' ] ),
 		babel( {
 			presets: [ 'es2015' ]
 		} ),
-		cleanDest( './src/js/build.js'),
+		cleanDest( './src/js/build.js' ),
 		rename( {
 			dirname: 'js',
 			basename: 'build',

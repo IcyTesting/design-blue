@@ -1,6 +1,5 @@
-import $ from 'jquery';
 $( document ).ready( () => {
-	$( '#img' ).hide();
-	let msg = 'mensaje';
-	console.log( msg );
+	$( '.grid-resp' ).each( () => {
+		console.log( this.data( 'grid' ) );
+	} );
 } );

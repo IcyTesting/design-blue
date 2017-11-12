@@ -1,0 +1,16 @@
+# FILES #
+############################
+.idea
+app
+fonts
+node_modules
+
+# Third hand #
+############################
+*.config
+*.css
+*.sql
+*.log
+*.pptx
+*.rar
+*.zip

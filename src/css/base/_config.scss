@@ -1,0 +1,32 @@
+@import "../helpers/_mixins";
+
+$color-blue-corp: #113658;
+$color-yellow-corp: #e0a547;
+$color-gray-corp: #808080;
+
+$color-blue-corp-light-15: lighten($color-blue-corp, 10);
+
+.outline {
+	outline: 1px solid red;
+}
+
+.grid-resp {
+	content: '';
+}
+
+.space {
+	grid-gap: 2em
+}
+
+.pad {
+	&-sec {
+		$pad: 40px;
+		$break-point: (980px 720px);
+		$break-value: (25px 15px);
+		@include mx-gen-pad('all', $pad, $break-point, $break-value);
+		@include mx-gen-pad('left', $pad, $break-point, $break-value);
+		@include mx-gen-pad('right', $pad, $break-point, $break-value);
+		@include mx-gen-pad('top', 20px);
+		@include mx-gen-pad('bottom', 20px);
+	}
+}

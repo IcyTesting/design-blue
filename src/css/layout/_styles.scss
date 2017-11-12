@@ -1,0 +1,48 @@
+@import "styles/width";
+@import "styles/height";
+@import "styles/titles";
+@import "styles/aline";
+
+.from-page {
+	display: block;
+	max-width: 100%;
+	overflow: hidden;
+}
+
+.social-net {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	header {
+		display: flex;
+		justify-content: flex-end;
+		font-size: 2em;
+		padding: 15px 0;
+		text-transform: uppercase;
+		font-weight: 300;
+		p {
+			text-align: right;
+			width: 350px;
+			//@extend .outline;
+		}
+	}
+	ul {
+		display: flex;
+		justify-content: flex-end;
+		align-items: flex-end;
+		li {
+			margin: 0 5px;
+			&:nth-child(1) {
+				margin-left: 0;
+			}
+			&:nth-last-child(1) {
+				margin-right: 0;
+			}
+		}
+	}
+	img {
+		width: 50px;
+	}
+}
+
+
