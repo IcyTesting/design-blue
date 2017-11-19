@@ -1,0 +1,19 @@
+.pad {
+	&-none {
+		padding: 0;
+	}
+	&-top {
+		padding-top: 1rem;
+	}
+	&-bot {
+		padding-bottom: 1rem;
+	}
+	&-sm {
+		@include media-breakpoint-down(sm) {
+			&-top {
+				padding-top: 1rem;
+			}
+		}
+	}
+}
+

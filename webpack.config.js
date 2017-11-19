@@ -143,7 +143,6 @@ module.exports = {
 			disable: false,
 			allChunks: true
 		} ),
-		//new CssoWebpackPlugin(),
 		new WebpackUglifyJsPlugin( {
 			cacheFolder: path.resolve( __dirname, './src/js' ),
 			debug: true,
@@ -163,6 +162,7 @@ module.exports = {
 			port: 3000,
 			proxy: 'dbs-web.dev',
 			files: './view/**/*.php'
-		} )
+		} ),
+		new CssoWebpackPlugin()
 	]
 };

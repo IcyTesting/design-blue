@@ -1,0 +1,24 @@
+@import "../../base/config";
+
+.line-hover {
+	&:after {
+		content: '';
+		display: inline-block;
+		position: absolute;
+		bottom: 0;
+		opacity: 0;
+		left: 50%;
+		height: 1px;
+		width: 0;
+		background: $color-blue-corp;
+		transition: all .2s;
+	}
+	position: relative;
+	&:hover {
+		&:after {
+			left: 0;
+			opacity: 1;
+			width: 100%;
+		}
+	}
+}

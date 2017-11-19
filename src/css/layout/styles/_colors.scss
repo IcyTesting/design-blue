@@ -1,0 +1,43 @@
+@import "~bootstrap/scss/mixins";
+
+.bg- {
+	&blue {
+		background: $color-blue-corp;
+	}
+	&success {
+		&-sm {
+			@extend .bg-success;
+			@include media-breakpoint-down(sm) {
+				background: none !important;
+			}
+		}
+	}
+	&primary {
+		&-sm {
+			@extend .bg-primary;
+			@include media-breakpoint-down(sm) {
+				background: none !important;
+			}
+		}
+	}
+}
+
+.color {
+	&-blue {
+		color: $color-blue-corp;
+	}
+	&-white {
+		&-md {
+			@include media-breakpoint-up(md) {
+				color: #fff !important;
+			}
+		}
+	}
+}
+
+.navbar- {
+	&blue {
+		@include mx-gen-color-link($color-blue-corp);
+	}
+	
+}

@@ -10,8 +10,8 @@
 <?php
 	require_once 'file/_header.php';
 	require_once 'file/_nav.php';
+	require_once 'file/_from-page.php';
 ?>
-
 <main>
 	<?php
 		require_once 'file/_sections.php';
