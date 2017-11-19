@@ -1,11 +1,11 @@
-@function fn-gen-grid_tem($num,$value) {
+@function fn-gen-grid_value($num,$tyle) {
 	$return: '';
-	@if ($value == 'num') {
+	@if ($tyle == 'num') {
 		$return: '';
 		@for $i from 1 through $num {
 			$return: '#{$return} 1fr';
 		}
-	} @else if ($value == 'auto') {
+	} @else if ($tyle == 'auto') {
 		$return: '';
 		@for $i from 1 through $num {
 			$return: '#{$return} auto';

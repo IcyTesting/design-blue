@@ -5,26 +5,22 @@
 		require_once 'file/_head.php';
 	?>
 </head>
-<body>
-<header class="col-cont-2-fix row-cont-1 pad-sec pad-sec-top pad-sec-bottom">
-	<?php
-		require_once 'file/_header.php';
-	?>
-</header>
-<nav class="nav-main">
-	<?php
-		require_once 'file/_nav.php';
-	?>
-</nav>
-<div class="from-page" id="img">
-	<figure>
-		<img src="http://localhost:3000/img/header-main.png" alt="DBS-Business">
-	</figure>
-</div>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<?php
+	require_once 'file/_header.php';
+	require_once 'file/_nav.php';
+?>
+
 <main>
 	<?php
-		require_once 'file/_section.php';
+		require_once 'file/_sections.php';
 	?>
 </main>
+<footer>
+	<?php
+		require_once 'file/_footer.php';
+	?>
+</footer>
 </body>
 </html>

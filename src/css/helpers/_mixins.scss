@@ -1,77 +1,19 @@
 @import "functions";
 
-/*Generating column o row when using GRID*/
-@mixin mx-gen-col_row($num,$type) {
-	&-#{$num} {
-		@if $type == 'col' {
-			grid-column: #{$num}/#{$num+1};
-		} @else if ($type == 'row') {
-			grid-row: #{$num}/#{$num+1};
-		}
-		&-full {
-			@if ($type == 'col') {
-				grid-column: span $num;
-			} @else if ($type == 'row') {
-				grid-row: span $num;
+@mixin mx-gen-color-link($color) {
+	$navbar-dark-active-color: $white !default;
+	.navbar-nav {
+		.nav-link {
+			color: rgba($color, .5);
+			@include hover-focus {
+				color: rgba($color, .75);
 			}
-		}
-	}
-}
-
-/*Generating container column when using GRID*/
-@mixin mx-gen-cont-col_row($num,$type) {
-	&-#{$num} {
-		display: grid;
-		@if ($type == 'col') {
-			//grid-template-columns: #{fn-gen-grid_tem($num, 'auto')};
-			grid-template-columns: repeat($num, auto);
-		} @else if ($type == 'row') {
-			//grid-template-rows: #{fn-gen-grid_tem($num, 'auto')};
-			grid-template-rows: repeat($num, auto);
-		}
-		&-fix {
-			display: grid;
-			@if ($type == 'col') {
-				//grid-template-columns: #{fn-gen-grid_tem($num, 'auto')};
-				grid-template-columns: repeat($num, 1fr);
-			} @else if ($type == 'row') {
-				//grid-template-rows: #{fn-gen-grid_tem($num, 'auto')};
-				grid-template-rows: repeat($num, 1fr);
+			&.active {
+				color: rgba($color, 1);
+				font-weight: bold;
 			}
-		}
-	}
-}
-
-@mixin mx-gen-pad($pos,$val,$break-point:'',$break-val:0) {
-	//Magic
-	@if ($break-point != '') {
-		@if ($pos == 'all') {
-			& {
-				padding: $val;
-				@for $i from 1 through length($break-point) {
-					@media screen and (max-width: nth($break-point, $i)) {
-						padding: nth($break-val, $i);
-					}
-				}
-			}
-		} @else {
-			&-#{$pos} {
-				padding-#{$pos}: $val;
-				@for $i from 1 through length($break-point) {
-					@media screen and (max-width: nth($break-point, $i)) {
-						padding-#{$pos}: nth($break-val, $i);
-					}
-				}
-			}
-		}
-	} @else {
-		@if ($pos == 'all') {
-			& {
-				padding: $val;
-			}
-		} @else {
-			&-#{$pos} {
-				padding-#{$pos}: $val;
+			&.disabled {
+				color: rgba($color, .25);
 			}
 		}
 	}

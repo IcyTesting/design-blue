@@ -4,6 +4,7 @@
 app
 fonts
 node_modules
+*cached*
 
 # Third hand #
 ############################

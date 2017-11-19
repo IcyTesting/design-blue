@@ -1,35 +1,38 @@
+//@charset "UTF-8";
 /*
 Vendor - plugins of third
 _booststrap,_jquery-ui,_normalize
 */
+@import "~bootstrap/scss/bootstrap-reboot";
+@import "~bootstrap/scss/bootstrap-grid";
+@import "~bootstrap/scss/bootstrap";
 /*
 Base - Code base of the project
 _reset, _typography, _animations, _ect
 */
 @import "base/config";
-@import "base/base";
 @import "base/typography";
 /*
 Helpers
 _functions, _mixins, _placeholders, _ect
 */
-@import "helpers/mixins";
 @import "helpers/functions";
+@import "helpers/mixins";
 /*
 Components - container of widgets
 _carousel,_media,_ect
 */
-@import "components/corousel";
+//@import "components/corousel";
 /*
 Layout - Code general of the web
 _grid, _header, _section, _nav, _footer, _ect
 */
-@import "layout/_styles";
-@import "layout/grid";
-@import "layout/body";
-@import "layout/header";
+@import "layout/styles";
+//@import "layout/grid";
+//@import "layout/body";
+//@import "layout/header";
 @import "layout/nav";
-
+//@import "layout/section";
 /*
 Pages - style specific
 _home, _contact, _ect
@@ -38,3 +41,7 @@ _home, _contact, _ect
 Themes
 _admin, _user, _ect
 */
+
+* {
+	font-family: Roboto, Verdana, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica Neue, Arial, sans-serif;
+}
