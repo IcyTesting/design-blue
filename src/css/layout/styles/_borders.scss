@@ -1,0 +1,23 @@
+.border {
+	&-h {
+		transition: all .2s;
+		box-shadow: none;
+		&:hover {
+			box-shadow: 0 0 0 2px $color-greenNeon inset;
+		}
+	}
+	&-bottom {
+		border-bottom: 2px solid $color-blue-corp;
+	}
+	&-radius {
+		border-radius: .25rem;
+		&-left {
+			border-top-left-radius: .25rem;
+			border-bottom-left-radius: .25rem;
+		}
+		&-right {
+			border-top-right-radius: .25rem;
+			border-bottom-right-radius: .25rem;
+		}
+	}
+}

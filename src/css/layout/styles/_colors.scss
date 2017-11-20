@@ -4,6 +4,9 @@
 	&-blue {
 		background: $color-blue-corp;
 	}
+	&-blueLight {
+		background: $color-blueLight;
+	}
 	&-success {
 		&-h {
 			@extend .bg-success;
@@ -35,6 +38,9 @@
 }
 
 .text {
+	&-yellow {
+		color: $color-yellow-corp;
+	}
 	&-blue {
 		color: $color-blue-corp;
 	}

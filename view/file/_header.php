@@ -7,7 +7,7 @@
 			<p class="hidden-sm" style="font-size: 2.5em;">
 				<span style="font-weight:100;">Genera ingresos </span><strong class="text-blue">por tus compras</strong>
 			</p>
-			<ul class="list-no-style pad-none pad-sm-top social-media justify-content-center">
+			<ul class="list-no-style pad-none pad-sm-top social-media justify-content-center" style="display: inline-flex;flex-wrap: wrap">
 				<?php
 					$sm = [ 'sm_facebook', 'sm_twitter', 'sm_google-plus', 'sm_linkeding', 'sm_tumblr', 'sm_instagram', 'sm_pinteres', 'sm_youtube', 'sm_vimeo', 'sm_rss' ];
 					for ( $i = 0; $i < count( $sm ); $i++ ) {

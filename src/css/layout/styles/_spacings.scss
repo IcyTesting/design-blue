@@ -2,14 +2,39 @@
 	&-none {
 		padding: 0;
 	}
+	&-left {
+		padding-left: 1rem;
+	}
+	&-right {
+		padding-right: 1rem;
+	}
 	&-top {
 		padding-top: 1rem;
 	}
-	&-bot {
+	&-bottom {
 		padding-bottom: 1rem;
+	}
+	&-up {
+		@include media-breakpoint-up(xs) {
+			&-none {
+				padding: 0;
+			}
+			&-let {
+				padding-left: 1rem;
+			}
+			&-right {
+				padding-right: 1rem;
+			}
+			&-bottom {
+				padding-bottom: 1rem;
+			}
+		}
 	}
 	&-sm {
 		@include media-breakpoint-down(sm) {
+			&-none {
+				padding: 0;
+			}
 			&-top {
 				padding-top: 1rem;
 			}
@@ -18,17 +43,23 @@
 }
 
 .mar {
+	&-none {
+		margin: 0;
+	}
 	&-let {
-		margin-left: 0;
+		margin-left: 1rem;
 	}
 	&-right {
-		margin-right: 0;
+		margin-right: 1rem;
 	}
 	&-bottom {
-		margin-bottom: 0;
+		margin-bottom: 1rem;
 	}
 	&-up {
 		@include media-breakpoint-up(xs) {
+			&-none {
+				margin: 0;
+			}
 			&-let {
 				margin-left: 1rem;
 			}
@@ -42,6 +73,9 @@
 	}
 	&-down {
 		@include media-breakpoint-down(xs) {
+			&-none {
+				margin: 0;
+			}
 			&-let {
 				margin-left: 1rem;
 			}
@@ -56,6 +90,9 @@
 	&-sm {
 		&-up {
 			@include media-breakpoint-up(sm) {
+				&-none {
+					margin: 0;
+				}
 				&-let {
 					margin-left: 1rem;
 				}
@@ -69,6 +106,9 @@
 		}
 		&-down {
 			@include media-breakpoint-down(sm) {
+				&-none {
+					margin: 0;
+				}
 				&-let {
 					margin-left: 1rem;
 				}

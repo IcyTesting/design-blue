@@ -4,21 +4,8 @@
 	outline: 1px solid red;
 }
 
-.border {
-	&-bottom {
-		border-bottom: 2px solid $color-blue-corp;
-	}
-	&-radius {
-		border-radius: .25rem;
-		&-left {
-			border-top-left-radius: .25rem;
-			border-bottom-left-radius: .25rem;
-		}
-		&-right {
-			border-top-right-radius: .25rem;
-			border-bottom-right-radius: .25rem;
-		}
-	}
+.shadow {
+	box-shadow: 0 1px 8px #282828;
 }
 
 .list {

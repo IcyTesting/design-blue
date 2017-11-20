@@ -18,7 +18,7 @@
 			</article>
 		</div>
 	</section>
-	<div class="container-fluid bg-white" style="padding-top: 2rem;padding-bottom: 2rem">
+	<div class="container-fluid bg-white" style="padding-top: 2rem;padding-bottom: 2rem; margin-bottom: 3rem">
 		<div class="row text-center justify-content-center">
 			<h2 class="col-12 font-weight-bold text-blue" style="font-size: 3rem">
 				Genera Ingresos por tus Compras
@@ -45,4 +45,117 @@
 			</ul>
 		</div>
 	</div>
+	<section class="bg-blue pad-up-bottom">
+		<div class="container text-white pad-top">
+			<!--Title-->
+			<div class="row justify-content-center text-center">
+				<h2 class="col-sm-12" style="font-size: 3rem">
+					¿Por qu&eacute; <strong>Elegirnos</strong>?
+				</h2>
+				<p class="col-sm-8">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, ipsam?
+				</p>
+			</div>
+			<!--Group-->
+			<div class="row justify-content-center text-justify pad-right pad-left">
+				<div class="col-12 col-sm-12 col-md-5 row mar-sm-up-let mar-sm-up-right mar-bottom pad-top pad-bottom bg-blueLight shadow border-h">
+					<div class="col-2 col-sm-2">
+						<i class="fa fa-building text-yellow" style="font-size: 2rem"></i>
+					</div>
+					<div class="col-10 col-sm-10 ">
+						<h3 style="font-size: 1.75rem">
+							<strong>Creamos</strong>
+						</h3>
+						<p>
+							Comunidad para Negocios Pymes y grandes empresas monitoreados de forma online.
+						</p>
+					</div>
+				</div>
+				<div class="col-12 col-sm-12 col-md-5 row mar-sm-up-let mar-sm-up-right mar-bottom pad-top pad-bottom bg-blueLight shadow border-h">
+					<div class="col-2 col-sm-2">
+						<i class="fa fa-credit-card text-yellow" style="font-size: 2rem"></i>
+					</div>
+					<div class="col-10 col-sm-10 ">
+						<h3 style="font-size: 1.75rem">
+							<strong>Promovemos</strong>
+						</h3>
+						<p>
+							La compra de productos y servicios de los comercios afiliados a nosotros. Adherimos un sistema de pagos.
+						</p>
+					</div>
+				</div>
+				<div class="col-12 col-sm-12 col-md-5 row mar-sm-up-let mar-sm-up-right mar-bottom pad-top pad-bottom bg-blueLight shadow border-h">
+					<div class="col-2 col-sm-2">
+						<i class="fa fa-cube text-yellow" style="font-size: 2rem"></i>
+					</div>
+					<div class="col-10 col-sm-10 ">
+						<h3 style="font-size: 1.75rem">
+							<strong>Premiamos</strong>
+						</h3>
+						<p>
+							A los usuarios por su preferencia y sus compras en todos los negocios que utilicen nuestro servicio a través del sistema de mercadeo.
+						</p>
+					</div>
+				</div>
+				<div class="col-12 col-sm-12 col-md-5 row mar-sm-up-let mar-sm-up-right mar-bottom pad-top pad-bottom bg-blueLight shadow border-h">
+					<div class="col-2 col-sm-2">
+						<i class="fa fa-bank text-yellow" style="font-size: 2rem"></i>
+					</div>
+					<div class="col-10 col-sm-10 ">
+						<h3 style="font-size: 1.75rem">
+							<strong>Potenciamos </strong>
+						</h3>
+						<p>
+							El ingreso económico y el crecimiento de todo tipo de Empresas a través de los consumidores DBS, y nuestro sistema de Afiliados.
+						</p>
+					</div>
+				</div>
+				<div class="col-12 col-sm-12 col-md-5 row mar-sm-up-let mar-sm-up-right mar-bottom pad-top pad-bottom bg-blueLight shadow border-h">
+					<div class="col-2 col-sm-2">
+						<i class="fa fa-bullhorn text-yellow" style="font-size: 2rem"></i>
+					</div>
+					<div class="col-10 col-sm-10 ">
+						<h3 style="font-size: 1.75rem">
+							<strong>Marketing de Empresas</strong>
+						</h3>
+						<p>
+							Recomendamos a los usuarios su empresa y productos mediante nuestro sistema inteligente de publicidad en la Web.
+						</p>
+					</div>
+				</div>
+				<div class="col-12 col-sm-12 col-md-5 row mar-sm-up-let mar-sm-up-right mar-bottom pad-top pad-bottom bg-blueLight shadow border-h">
+					<div class="col-2 col-sm-2">
+						<i class="fa fa-search text-yellow" style="font-size: 2rem"></i>
+					</div>
+					<div class="col-10 col-sm-10 ">
+						<h3 style="font-size: 1.75rem">
+							<strong>Evaluamos</strong>
+						</h3>
+						<p>
+							Evaluamos a nuestros usuarios mediante nuestra base datos teniendo así el conocimiento de sus gustos y preferencias hacia las diferentes empresas y productos.
+						</p>
+					</div>
+				</div>
+				<?php
+					//	for ( $i = 0; $i < 6; $i++ ) {
+					//		?>
+				<!--		<div class="col-12 col-sm-12 col-md-5 row mar-sm-up-let mar-sm-up-right mar-bottom pad-top pad-bottom bg-blueLight shadow border-h">-->
+				<!--			<div class="col-2 col-sm-2">-->
+				<!--				<i class="fa fa-user-plus text-yellow" style="font-size: 2rem"></i>-->
+				<!--			</div>-->
+				<!--			<div class="col-10 col-sm-10 ">-->
+				<!--				<h3 style="font-size: 1.75rem">-->
+				<!--					<strong>Creamos</strong>-->
+				<!--				</h3>-->
+				<!--				<p>-->
+				<!--					Comunidad para Negocios Pymes y grandes empresas monitoreados de forma on line.-->
+				<!--				</p>-->
+				<!--			</div>-->
+				<!--		</div>-->
+				<!--		--><?php
+					//	}
+					//?>
+			</div>
+		</div>
+	</section>
 </main>
