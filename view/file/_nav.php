@@ -2,7 +2,7 @@
 <!-- Brand -->
 	<div class="navbar-header navbar-left">
 		<a href="#" class="navbar-brand">
-			<img style="width:100px;" src="http://localhost:3000/img/dbs-logo.svg" alt="DBS-Business">
+			<img style="width:100px;" src="http://prueba.dbs-business.com/img/dbs-logo.svg" alt="DBS-Business">
 		</a>
 	</div>
 	<!-- Toggler/collapsibe Button -->

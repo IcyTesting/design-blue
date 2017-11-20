@@ -3,4 +3,4 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <title>Dbs Business</title>
-<link rel="stylesheet" href="http://localhost:3000/src/css/main.min.css">
+<link rel="stylesheet" href="http://prueba.dbs-business.com/src/css/main.min.css">

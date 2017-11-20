@@ -1,7 +1,7 @@
 <div class="front-page bg-img">
 	<div class="bg-img-cont">
 		<figure class="bg-img-file">
-			<img src="http://localhost:3000/img/front-page/img1.png" alt="DBS-Business">
+			<img src="http://prueba.dbs-business.com/img/front-page/img1.png" alt="DBS-Business">
 		</figure>
 		<div class="bg-img-over text-white">
 			<div class="bg-img-title">
@@ -16,7 +16,7 @@
 	</div>
 	<div class="bg-img-cont">
 		<figure class="bg-img-file">
-			<img src="http://localhost:3000/img/front-page/img2.png" alt="DBS-Business">
+			<img src="http://prueba.dbs-business.com/img/front-page/img2.png" alt="DBS-Business">
 		</figure>
 		<div class="bg-img-over text-white">
 			<div class="bg-img-title">
@@ -31,7 +31,7 @@
 	</div>
 	<div class="bg-img-cont">
 		<figure class="bg-img-file">
-			<img src="http://localhost:3000/img/front-page/img3.png" alt="DBS-Business">
+			<img src="http://prueba.dbs-business.com/img/front-page/img3.png" alt="DBS-Business">
 		</figure>
 		<div class="bg-img-over text-white">
 			<div class="bg-img-title">

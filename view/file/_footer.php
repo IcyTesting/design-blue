@@ -1,1 +1,1 @@
-<script src="http://localhost:3000/src/js/main.bundle.js"></script>
+<script src="http://prueba.dbs-business.com/src/js/main.bundle.js"></script>

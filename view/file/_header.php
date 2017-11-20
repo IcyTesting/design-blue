@@ -1,7 +1,7 @@
 <header class="container-fluid">
 	<div class="row  align-items-center">
 		<div class="col-md-4 col-sm-12 text-md-left text-center">
-			<img class="" src="http://localhost:3000/img/dbs-logo.svg" alt="DBS-Business" style="max-width:250px;">
+			<img class="" src="http://prueba.dbs-business.com/img/dbs-logo.svg" alt="DBS-Business" style="max-width:250px;">
 		</div>
 		<div class="col-md-8 col-sm-12 text-md-right text-center">
 			<p class="hidden-sm" style="font-size: 2.5em;">
@@ -14,7 +14,7 @@
 						?>
 						<li>
 							<a href="#">
-								<img src="http://localhost:3000/img/social-media/<?php echo $sm[ $i ] ?>.svg" class="" alt="compra-con-dbs-business" style="width:45px;">
+								<img src="http://prueba.dbs-business.com/img/social-media/<?php echo $sm[ $i ] ?>.svg" class="" alt="compra-con-dbs-business" style="width:45px;">
 							</a>
 						</li>
 						<?php
@@ -23,5 +23,5 @@
 			</ul>
 		</div>
 	</div>
-	<!--<img src="http://localhost:3000/img/icon.svg" alt="compra-con-dbs-business">-->
+	<!--<img src="http://prueba.dbs-business.com/img/icon.svg" alt="compra-con-dbs-business">-->
 </header>
