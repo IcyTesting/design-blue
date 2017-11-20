@@ -1,11 +1,11 @@
-<header class="container-fluid pad-top pad-bot">
-	<div class="row">
+<header class="container-fluid">
+	<div class="row  align-items-center">
 		<div class="col-md-4 col-sm-12 text-md-left text-center">
-			<img class="" src="http://localhost:3000/img/dbs-logo.svg" alt="DBS-Business" style="max-width:350px;">
+			<img class="" src="http://localhost:3000/img/dbs-logo.svg" alt="DBS-Business" style="max-width:250px;">
 		</div>
 		<div class="col-md-8 col-sm-12 text-md-right text-center">
 			<p class="hidden-sm" style="font-size: 2.5em;">
-				<span style="font-weight:100;">Genera ingresos </span><strong class="color-blue">por tus compras</strong>
+				<span style="font-weight:100;">Genera ingresos </span><strong class="text-blue">por tus compras</strong>
 			</p>
 			<ul class="list-no-style pad-none pad-sm-top social-media justify-content-center">
 				<?php

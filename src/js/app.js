@@ -1,6 +1,7 @@
 let $ = require( 'jquery' );
 require( 'popper.js' );
 require( 'bootstrap' );
+import 'slick-carousel';
 
 $( document ).ready( () => {
 	
@@ -47,4 +48,16 @@ $( document ).ready( () => {
 				}
 			} );
 	
+} );
+$( window ).ready( () => {
+	/* *
+	 * Slider
+	 * */
+	$( '.front-page' ).slick( {
+		autoplay: true,
+		arrows: false,
+		fade: true,
+		easing: 'ease-in-out',
+		lazyLoad: 'progressive'
+	} );
 } );

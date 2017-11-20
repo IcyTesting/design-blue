@@ -1,0 +1,38 @@
+.card-container {
+	padding: 0 1rem;
+	margin-bottom: 5rem;
+	@include media-breakpoint-down(md) {
+		margin-bottom: 3rem;
+	}
+	.card-item {
+		background: #fff;
+		position: relative;
+		margin: -5rem 1rem 0;
+		box-shadow: 0 56px 36px -60px #121d12;
+		@include media-breakpoint-down(sm) {
+			margin-top: 3rem;
+		}
+		&:before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			display: inline-block;
+			width: 100%;
+			height: 6px;
+			background: $color-blue-corp;
+		}
+		.card-icon {
+			color: $color-blue-corp;
+			font-size: 4rem;
+			margin: 2rem 0 0;
+		}
+		.card-title {
+			margin: 1rem 0;
+			//color: $color-blue-corp;
+		}
+		.card-info {
+			color: #40464b;
+		}
+	}
+}

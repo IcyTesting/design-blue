@@ -17,9 +17,9 @@
 			<li class="nav-item line-hover"><a href="#company" class="nav-link">Empresas</a></li>
 			<li class="nav-item line-hover"><a href="#contact" class="nav-link">Contactos</a></li>
 			<li class="nav-item bg-success-sm border-radius-left">
-				<a href="#" class="nav-link color-white-md" title="Iniciar Sesi&oacute;n">Iniciar Sesi&oacute;n</a></li>
+				<a href="#" class="nav-link text-white-md" title="Iniciar Sesi&oacute;n">Iniciar Sesi&oacute;n</a></li>
 			<li class="nav-item bg-primary-sm border-radius-right ">
-				<a href="#" class="nav-link color-white-md" title="Registrarse" hreflang="es">Registrarse</a>
+				<a href="#" class="nav-link text-white-md" title="Registrarse" hreflang="es">Registrarse</a>
 			</li>
 		</ul>
 	</div>

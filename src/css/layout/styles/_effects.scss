@@ -1,6 +1,7 @@
 @import "../../base/config";
 
 .line-hover {
+	position: relative;
 	&:after {
 		content: '';
 		display: inline-block;
@@ -13,12 +14,24 @@
 		background: $color-blue-corp;
 		transition: all .2s;
 	}
-	position: relative;
 	&:hover {
 		&:after {
 			left: 0;
 			opacity: 1;
 			width: 100%;
+		}
+	}
+	&-md {
+		&-down {
+			@include media-breakpoint-down(md) {
+				&:hover {
+					&:after {
+						left: 0;
+						opacity: 1;
+						width: 100%;
+					}
+				}
+			}
 		}
 	}
 }

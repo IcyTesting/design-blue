@@ -1,10 +1,16 @@
 @import "~bootstrap/scss/mixins";
 
-.bg- {
-	&blue {
+.bg {
+	&-blue {
 		background: $color-blue-corp;
 	}
-	&success {
+	&-success {
+		&-h {
+			@extend .bg-success;
+			&:hover {
+				box-shadow: 0 2px 5px mix(#fff, #000, 35);
+			}
+		}
 		&-sm {
 			@extend .bg-success;
 			@include media-breakpoint-down(sm) {
@@ -12,7 +18,13 @@
 			}
 		}
 	}
-	&primary {
+	&-primary {
+		&-h {
+			@extend .bg-primary;
+			&:hover {
+				box-shadow: 0 2px 5px mix(#fff, #000, 45);
+			}
+		}
 		&-sm {
 			@extend .bg-primary;
 			@include media-breakpoint-down(sm) {
@@ -22,11 +34,12 @@
 	}
 }
 
-.color {
+.text {
 	&-blue {
 		color: $color-blue-corp;
 	}
 	&-white {
+		color: #fff;
 		&-md {
 			@include media-breakpoint-up(md) {
 				color: #fff !important;

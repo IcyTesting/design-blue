@@ -7,6 +7,9 @@ _booststrap,_jquery-ui,_normalize
 @import "~bootstrap/scss/bootstrap-reboot";
 @import "~bootstrap/scss/bootstrap-grid";
 @import "~bootstrap/scss/bootstrap";
+@import "~slick-carousel/slick/slick-theme";
+@import "~slick-carousel/slick/slick";
+@import "vendor/font-awesome/font-awesome";
 /*
 Base - Code base of the project
 _reset, _typography, _animations, _ect
@@ -23,7 +26,8 @@ _functions, _mixins, _placeholders, _ect
 Components - container of widgets
 _carousel,_media,_ect
 */
-//@import "components/corousel";
+@import "components/corousel";
+@import "components/card";
 /*
 Layout - Code general of the web
 _grid, _header, _section, _nav, _footer, _ect
@@ -42,7 +46,10 @@ _home, _contact, _ect
 Themes
 _admin, _user, _ect
 */
+html, body {
+	background: #f0f0f0;
+}
 
-img{
+img {
 	width: 100%;
 }

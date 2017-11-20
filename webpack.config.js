@@ -1,7 +1,6 @@
 let path = require( 'path' );
 let webpack = require( 'webpack' );
 let ExtractTextPlugin = require( 'extract-text-webpack-plugin' );
-//let babel = require( 'babel-loader' );
 let WebpackUglifyJsPlugin = require( 'webpack-uglify-js-plugin' );
 let ProgressBar = require( 'progress-bar-webpack-plugin' );
 let BrowserSyncPlugin = require( 'browser-sync-webpack-plugin' );
@@ -9,10 +8,11 @@ let CssoWebpackPlugin = require( 'csso-webpack-plugin' ).default;
 
 module.exports = {
 	resolve: {
-		extensions: [ 'scss', 'css', '.js' ],
+		extensions: [ '.scss', '.css', '.js', '.png', '.svg', '.gif' ],
 		modules: [
 			path.join( __dirname, 'src' ),
-			'node_modules'
+			path.join( __dirname, 'node_modules' )
+		
 		]
 	},
 	context: __dirname,
@@ -23,8 +23,72 @@ module.exports = {
 	},
 	module: {
 		rules: [
+			// the url-loader uses DataUrls.
+			// the file-loader emits files.
 			{
-				test: /\.js$/,
+				test: /\.(woff|woff2|eot|ttf|svg)(\?v=\d+\.\d+\.\d+)?$/,
+				use: [
+					{
+						loader: 'file-loader',
+						options: {
+							name: 'fonts/[name].[ext]'
+						}
+					}
+				]
+			},
+			//{
+			//	test: /\.(woff|woff2)(\?v=\d+\.\d+\.\d+)?$/,
+			//	use: [
+			//		{
+			//			loader: 'url-loader',
+			//			options: {
+			//				limit: 10000,
+			//				mimeType: 'application/font-woff'
+			//			}
+			//		}
+			//	]
+			//},
+			//{
+			//	test: /\.ttf(\?v=\d+\.\d+\.\d+)?$/,
+			//	use: [
+			//		{
+			//			loader: 'url-loader',
+			//			options: {
+			//				limit: 10000,
+			//				mimeType: 'application/octet-stream'
+			//			}
+			//		}
+			//	]
+			//},
+			//{
+			//	test: /\.(eot|oft)(\?v=\d+\.\d+\.\d+)?$/,
+			//	use: 'file-loader'
+			//},
+			//{
+			//	test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
+			//	use: [
+			//		{
+			//			loader: 'url-loader',
+			//			options: {
+			//				limit: 10000,
+			//				mimeType: 'application/svg+xml'
+			//			}
+			//		}
+			//	]
+			//},
+			{
+				test: /\.(png|jpg|gif)$/,
+				use: [
+					{
+						loader: 'file-loader',
+						options: {
+							name: ' [path][name].[ext]'
+						}
+					}
+				]
+			},
+			{
+				test: /\.(js|jsx)$/,
 				exclude: [ path.resolve( __dirname, './node_modules/' ) ],
 				use: [ {
 					loader: 'babel-loader',
@@ -33,70 +97,27 @@ module.exports = {
 					}
 				} ]
 			},
-			// the url-loader uses DataUrls.
-			// the file-loader emits files.
-			{
-				test: /\.(woff|woff2)(\?v=\d+\.\d+\.\d+)?$/,
-				use: [
-					{
-						loader: 'url-loader',
-						options: {
-							limit: 10000,
-							mimeType: 'application/font-woff'
-						}
-					}
-				]
-			},
-			{
-				test: /\.ttf(\?v=\d+\.\d+\.\d+)?$/,
-				use: [
-					{
-						loader: 'url-loader',
-						options: {
-							limit: 10000,
-							mimeType: 'application/octet-stream'
-						}
-					}
-				]
-			},
-			{
-				test: /\.(eot|oft)(\?v=\d+\.\d+\.\d+)?$/,
-				use: 'file-loader'
-			},
-			{
-				test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
-				use: [
-					{
-						loader: 'url-loader',
-						options: {
-							limit: 10000,
-							mimeType: 'application/svg+xml'
-						}
-					}
-				]
-			},
-			{
-				test: /\.(png|jpg|gif)$/,
-				use: [
-					{
-						loader: 'file-loader',
-						options: {
-							name: '[path][name].[ext]'
-						}
-					},
-					{
-						loader: 'url-loader',
-						options: {
-							limit: 100000
-						}
-					}
-				]
-			},
+			//{
+			//	test: /\.css$/,
+			//	include: [
+			//		path.resolve( __dirname, './src/css' ),
+			//		path.resolve( __dirname, 'node_modules/slick-carousel' )
+			//	],
+			//	use: [
+			//		{
+			//			loader: 'css-loader'
+			//		},
+			//		{
+			//			loader: 'style-loader'
+			//		}
+			//	]
+			//},
 			{
 				test: /\.scss$/,
 				include: [
 					path.resolve( __dirname, './src/css' ),
-					path.resolve( __dirname, 'node_modules/bootstrap/scss' )
+					path.resolve( __dirname, 'node_modules/bootstrap/scss' ),
+					path.resolve( __dirname, 'node_modules/slick-carousel' )
 				],
 				use: ExtractTextPlugin.extract( {
 					fallback: 'style-loader',
@@ -106,8 +127,8 @@ module.exports = {
 						loader: 'postcss-loader' // Run post css actions
 					}, {
 						loader: 'sass-loader' // compiles SASS to CSS
-					} ],
-					publicPath: './src/css/'
+					} ]
+					//publicPath: './src/css/'
 				} )
 			}
 		]
@@ -146,7 +167,7 @@ module.exports = {
 		new WebpackUglifyJsPlugin( {
 			cacheFolder: path.resolve( __dirname, './src/js' ),
 			debug: true,
-			minimize: true,
+			minimize: false,
 			sourceMap: false,
 			output: {
 				comments: false
